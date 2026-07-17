@@ -21,7 +21,19 @@ export default function Home() {
             className="profile-avatar"
             src="/avatar-penny.png"
           />
-          <span className="profile-name">李函忆 Penny</span>
+          <div className="profile-text">
+            <span className="profile-name">李函忆 Penny</span>
+            <div className="profile-contact-list" aria-label="联系方式">
+              <a className="profile-contact" href="mailto:hanyili@u.nus.edu">
+                <span className="contact-mark">@</span>
+                hanyili@u.nus.edu
+              </a>
+              <span className="profile-contact">
+                <span className="contact-mark">微</span>
+                Virrseptlennice
+              </span>
+            </div>
+          </div>
         </div>
       </header>
       <section className="map-panel" aria-label="城市成长路线动画">

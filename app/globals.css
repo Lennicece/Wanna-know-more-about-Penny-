@@ -130,8 +130,8 @@ a {
 
 .profile-identity {
   display: flex;
-  align-items: flex-end;
-  gap: 14px;
+  align-items: center;
+  gap: 18px;
 }
 
 .profile-avatar {
@@ -145,10 +145,44 @@ a {
 }
 
 .profile-name {
-  padding-bottom: 12px;
+  display: block;
   color: var(--bamboo-deep);
   font-size: clamp(18px, 1.65vw, 24px);
   font-weight: 400;
+}
+
+.profile-text {
+  display: grid;
+  gap: 8px;
+}
+
+.profile-contact-list {
+  display: grid;
+  gap: 5px;
+}
+
+.profile-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(48, 55, 51, 0.68);
+  font-size: clamp(12px, 1vw, 15px);
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.contact-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: var(--bamboo-deep);
+  font-size: 12px;
+  font-weight: 500;
+  background: rgba(255, 253, 246, 0.62);
+  border: 1px solid rgba(95, 143, 104, 0.22);
+  border-radius: 999px;
 }
 
 .map-card {
@@ -704,8 +738,12 @@ a {
     height: 68px;
   }
 
-  .profile-name {
-    padding-bottom: 9px;
+  .profile-identity {
+    gap: 14px;
+  }
+
+  .profile-text {
+    gap: 6px;
   }
 
   .map-card,

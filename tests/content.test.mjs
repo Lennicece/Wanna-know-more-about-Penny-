@@ -16,6 +16,8 @@ test("homepage and paths contain the core requested content", async () => {
   assert.match(home, /研究生/);
   assert.match(home, /上海市/);
   assert.match(home, /李函忆 Penny/);
+  assert.match(home, /hanyili@u\.nus\.edu/);
+  assert.match(home, /Virrseptlennice/);
   assert.doesNotMatch(home, /个人主页/);
   assert.match(home, /成长旅途/);
   assert.match(home, /Personal Website/);
